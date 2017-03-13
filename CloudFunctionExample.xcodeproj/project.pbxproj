@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2AC4E748B1B79F63C11B1F59 /* Pods_CloudFunctionExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5655C5A9704E1FF501A05407 /* Pods_CloudFunctionExample.framework */; };
 		4661EE1B1E7629580063D1E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4661EE1A1E7629580063D1E6 /* AppDelegate.swift */; };
 		4661EE1D1E7629580063D1E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4661EE1C1E7629580063D1E6 /* ViewController.swift */; };
 		4661EE201E7629580063D1E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4661EE1E1E7629580063D1E6 /* Main.storyboard */; };
@@ -22,6 +23,9 @@
 		4661EE211E7629580063D1E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4661EE241E7629580063D1E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4661EE261E7629580063D1E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5655C5A9704E1FF501A05407 /* Pods_CloudFunctionExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudFunctionExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8F75769D106E00050FAF95B /* Pods-CloudFunctionExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudFunctionExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CloudFunctionExample/Pods-CloudFunctionExample.debug.xcconfig"; sourceTree = "<group>"; };
+		C3053815EE5E616C9A9DDA06 /* Pods-CloudFunctionExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudFunctionExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-CloudFunctionExample/Pods-CloudFunctionExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AC4E748B1B79F63C11B1F59 /* Pods_CloudFunctionExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		446D84BE98A307DCDD8D47C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5655C5A9704E1FF501A05407 /* Pods_CloudFunctionExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4661EE0E1E7629580063D1E6 = {
 			isa = PBXGroup;
 			children = (
 				4661EE191E7629580063D1E6 /* CloudFunctionExample */,
 				4661EE181E7629580063D1E6 /* Products */,
+				F82A0667A18269BDDCA8DCC2 /* Pods */,
+				446D84BE98A307DCDD8D47C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = CloudFunctionExample;
 			sourceTree = "<group>";
 		};
+		F82A0667A18269BDDCA8DCC2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B8F75769D106E00050FAF95B /* Pods-CloudFunctionExample.debug.xcconfig */,
+				C3053815EE5E616C9A9DDA06 /* Pods-CloudFunctionExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4661EE291E7629580063D1E6 /* Build configuration list for PBXNativeTarget "CloudFunctionExample" */;
 			buildPhases = (
+				2A2F4ECE98D12BEFAA18B4CF /* [CP] Check Pods Manifest.lock */,
 				4661EE131E7629580063D1E6 /* Sources */,
 				4661EE141E7629580063D1E6 /* Frameworks */,
 				4661EE151E7629580063D1E6 /* Resources */,
+				5C7A0666008AA27E59DF6A35 /* [CP] Embed Pods Frameworks */,
+				5B0A2665CE3791833A6A3183 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A2F4ECE98D12BEFAA18B4CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5B0A2665CE3791833A6A3183 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CloudFunctionExample/Pods-CloudFunctionExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C7A0666008AA27E59DF6A35 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CloudFunctionExample/Pods-CloudFunctionExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4661EE131E7629580063D1E6 /* Sources */ = {
@@ -257,6 +332,7 @@
 		};
 		4661EE2A1E7629580063D1E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8F75769D106E00050FAF95B /* Pods-CloudFunctionExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZY7497MHJE;
@@ -270,6 +346,7 @@
 		};
 		4661EE2B1E7629580063D1E6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3053815EE5E616C9A9DDA06 /* Pods-CloudFunctionExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZY7497MHJE;
