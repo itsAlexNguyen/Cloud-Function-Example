@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "36250B079A26DED3E21FA4BFAF3CD798"
+               BlueprintIdentifier = "76D98AD114900BC3379501ECC4804794"
                BuildableName = "Pods_CloudFunctionExample.framework"
                BlueprintName = "Pods-CloudFunctionExample"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "36250B079A26DED3E21FA4BFAF3CD798"
+            BlueprintIdentifier = "76D98AD114900BC3379501ECC4804794"
             BuildableName = "Pods_CloudFunctionExample.framework"
             BlueprintName = "Pods-CloudFunctionExample"
             ReferencedContainer = "container:Pods.xcodeproj">

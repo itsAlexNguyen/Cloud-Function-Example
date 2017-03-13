@@ -7,4 +7,11 @@ target 'CloudFunctionExample' do
 
   # Pods for CloudFunctionExample
 
+# Firebase Pods
+pod 'Firebase/Storage'
+pod 'Firebase/Auth'
+pod 'Firebase/Database'
+pod 'Firebase/Core'
+pod 'Firebase/Messaging'
+
 end

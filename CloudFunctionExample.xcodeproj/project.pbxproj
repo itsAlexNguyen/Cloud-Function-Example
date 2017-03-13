@@ -12,6 +12,7 @@
 		4661EE221E7629580063D1E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4661EE211E7629580063D1E6 /* Assets.xcassets */; };
 		4661EE251E7629580063D1E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4661EE231E7629580063D1E6 /* LaunchScreen.storyboard */; };
 		4661EE321E762B410063D1E6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4661EE311E762B410063D1E6 /* MainViewController.swift */; };
+		4661EE341E762C5C0063D1E6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4661EE331E762C5C0063D1E6 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		4661EE241E7629580063D1E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4661EE261E7629580063D1E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		4661EE311E762B410063D1E6 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4661EE331E762C5C0063D1E6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5655C5A9704E1FF501A05407 /* Pods_CloudFunctionExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudFunctionExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8F75769D106E00050FAF95B /* Pods-CloudFunctionExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudFunctionExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CloudFunctionExample/Pods-CloudFunctionExample.debug.xcconfig"; sourceTree = "<group>"; };
 		C3053815EE5E616C9A9DDA06 /* Pods-CloudFunctionExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudFunctionExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-CloudFunctionExample/Pods-CloudFunctionExample.release.xcconfig"; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 		4661EE191E7629580063D1E6 /* CloudFunctionExample */ = {
 			isa = PBXGroup;
 			children = (
+				4661EE331E762C5C0063D1E6 /* GoogleService-Info.plist */,
 				4661EE301E762ABF0063D1E6 /* Services */,
 				4661EE2F1E762ABA0063D1E6 /* Controller */,
 				4661EE2E1E762AB70063D1E6 /* View */,
@@ -190,6 +193,7 @@
 			files = (
 				4661EE251E7629580063D1E6 /* LaunchScreen.storyboard in Resources */,
 				4661EE221E7629580063D1E6 /* Assets.xcassets in Resources */,
+				4661EE341E762C5C0063D1E6 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
